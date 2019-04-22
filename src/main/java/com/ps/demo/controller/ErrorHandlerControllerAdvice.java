@@ -10,6 +10,11 @@ import com.ps.demo.dto.ValidationException;
 
 import lombok.Data;
 
+/**
+ * Controller advice
+ * @author Neetesh.Kadam
+ *
+ */
 @ControllerAdvice
 public class ErrorHandlerControllerAdvice {
 	@ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)

@@ -1,12 +1,8 @@
 package com.ps.demo.controller;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.geo.Distance;
-import org.springframework.data.geo.Metrics;
-import org.springframework.data.geo.Point;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,17 +12,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ps.demo.dto.LocationSearchDTO;
 import com.ps.demo.entities.ParkingSlot;
-import com.ps.demo.entities.ParkingSlotLocation;
-import com.ps.demo.mongorepo.ParkingSlotLocationRepository;
 import com.ps.demo.service.ParkingSlotService;
 
+/**
+ * Parking slot controller
+ * @author Neetesh.Kadam
+ *
+ */
 @RestController
 @RequestMapping(path="parkingSlots")
 public class ParkingSlotController {
 	@Autowired
 	private ParkingSlotService parkingSlotService;
-	
-
 	
 	/**
 	 * See available parking slot on map

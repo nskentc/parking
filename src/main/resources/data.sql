@@ -1,8 +1,8 @@
 --Vehicle Owners
-insert into Vehicle_Owner values(1,'Neetesh','0990909090','MH12 AB1200');
-insert into Vehicle_Owner values(2,'Ganesh','0990909090','MH12 AB1200');
-insert into Vehicle_Owner values(3,'Tirth','0990909090','MH12 AB1200');
-insert into Vehicle_Owner values(4,'Pankaj','0990909090','MH12 AB1200');
+insert into Vehicle_Owner values(1,'Neetesh','0990909091','MH12 AB1201');
+insert into Vehicle_Owner values(2,'Ganesh','0990909092','MH12 AB1202');
+insert into Vehicle_Owner values(3,'Tirth','0990909093','MH12 AB1203');
+insert into Vehicle_Owner values(4,'Pankaj','0990909094','MH12 AB1204');
 
 --Parking Slot
 insert into Parking_Slot values(1,100,1.1,1.2,1);

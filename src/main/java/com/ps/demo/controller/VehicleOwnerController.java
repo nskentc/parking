@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ps.demo.dto.RegisterVehicleOwnerDTO;
 import com.ps.demo.service.VehicleOwnerService;
 
+/**
+ * Vehicle Owner
+ * @author Neetesh.Kadam
+ *
+ */
 @RestController
 @RequestMapping(path="vehicleOwners")
 public class VehicleOwnerController {

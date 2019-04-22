@@ -17,6 +17,10 @@ public class VehicleOwnerService {
 	@Autowired
 	private UtilityService utililtyService;
 
+	/**
+	 * Register vehicle owner
+	 * @param RegisterVehicleOwnerDTO
+	 */
 	public void register(RegisterVehicleOwnerDTO registerVehicleOwnerDTO) {
 		boolean isValidPhoneNo = utililtyService.validatePhoneNo(registerVehicleOwnerDTO.getPhoneNo(), registerVehicleOwnerDTO.getCountryCode());
 		if(!isValidPhoneNo) {

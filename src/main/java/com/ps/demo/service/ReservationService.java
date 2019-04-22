@@ -17,6 +17,11 @@ public class ReservationService {
 	@Autowired
 	private ReservationRepository reservationRepository;
 	
+	/**
+	 * get reservation
+	 * @param reservationId
+	 * @return
+	 */
 	public ReservationDTO getReservation(long reservationId) {
 		Reservation reservation = reservationRepository.getOne(reservationId);
 		
@@ -29,7 +34,11 @@ public class ReservationService {
 		return reservationDTO;
 	}
 	
-	
+	/**
+	 * Get cost of reservation
+	 * @param reservationId
+	 * @return
+	 */
 	public long getReservationCost(long reservationId) {
 		Reservation reservation = reservationRepository.getOne(reservationId);
 		long costPerHour = reservation.getParkingSlot().getCostPerHour();
@@ -40,6 +49,10 @@ public class ReservationService {
 		return costPerHour*period.getHours();
 	}
 	
+	/**
+	 * Cancel reservation
+	 * @param reservationId
+	 */
 	public void cancelReservation(long reservationId) {
 		Reservation reservation = reservationRepository.getOne(reservationId);
 		reservation.setToTime(new Date());

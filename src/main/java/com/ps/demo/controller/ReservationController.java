@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ps.demo.dto.ReservationDTO;
 import com.ps.demo.service.ReservationService;
 
+/**
+ * Reservation Controller
+ * @author Neetesh.Kadam
+ *
+ */
 @RestController
 @RequestMapping(path="reservations")
 public class ReservationController {
